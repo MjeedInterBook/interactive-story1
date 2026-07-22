@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المشهد الأول</title>
+
+<style>
+body{
+    margin:0;
+    background:#000;
+    color:#fff;
+    font-family:Arial,sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+h1{
+    margin:20px;
+}
+
+video{
+    width:95%;
+    max-width:700px;
+    border-radius:12px;
+}
+
+#backBtn{
+    display:none;
+    margin-top:20px;
+    padding:14px 28px;
+    font-size:20px;
+    background:#ffffff;
+    color:#000;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>📖 المشهد الأول</h1>
+
+<video id="video" controls autoplay>
+    <source src="Scene1.mp4" type="video/mp4">
+    متصفحك لا يدعم تشغيل الفيديو.
+</video>
+
+<button id="backBtn" onclick="history.back()">
+⬅ العودة إلى القصة
+</button>
+
+<script>
+const video = document.getElementById("video");
+const btn = document.getElementById("backBtn");
+
+video.onended = function () {
+    btn.style.display = "block";
+};
+</script>
+
+</body>
+</html>
