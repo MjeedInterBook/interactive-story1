@@ -4,116 +4,205 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>الباب رقم ٧ | Door Number 7</title>
+<title>الباب رقم 7</title>
 
 <style>
 
 *{
+margin:0;
+padding:0;
 box-sizing:border-box;
 }
 
 body{
-margin:0;
-background:#111;
-color:#fff;
+
 font-family:Tahoma,Arial,sans-serif;
-line-height:2;
-}
 
-header{
-background:linear-gradient(180deg,#000,#1b1b1b);
-padding:70px 20px;
-text-align:center;
-}
+height:100vh;
 
-header h1{
-margin:0;
-font-size:52px;
-}
+overflow:hidden;
 
-header h2{
-margin-top:15px;
-font-weight:normal;
-color:#d8b15b;
-}
+display:flex;
 
-.author{
-margin-top:35px;
-font-size:22px;
-line-height:1.8;
+justify-content:center;
+
+align-items:center;
+
+background:#000;
+
+background-image:
+
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.70)),
+
+url("cover.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
 }
 
 .container{
-max-width:900px;
-margin:auto;
-padding:35px;
-}
 
-.ar{
-font-size:24px;
-margin-bottom:45px;
-}
-
-.en{
-direction:ltr;
-text-align:left;
-font-size:20px;
-color:#dddddd;
-border-left:4px solid #666;
-padding-left:18px;
-margin-bottom:55px;
-}
-
-.scene{
-text-align:center;
-margin:60px auto;
-}
-
-.scene img{
 width:100%;
-max-width:700px;
-border-radius:18px;
-box-shadow:0 0 35px rgba(0,0,0,.55);
-transition:.3s;
-cursor:pointer;
-}
 
-.scene img:hover{
-transform:scale(1.02);
-}
+max-width:900px;
 
-.play{
-margin-top:18px;
-font-size:24px;
-color:#ffd76b;
-}
+padding:35px;
 
-.play small{
-display:block;
-margin-top:10px;
-font-size:16px;
-color:#cccccc;
-}
-
-hr{
-border:none;
-height:1px;
-background:#444;
-margin-top:25px;
-}
-
-footer{
-padding:60px;
 text-align:center;
-color:#888;
-font-size:15px;
+
+color:white;
+
+backdrop-filter:blur(3px);
+
 }
 
-a{
+.frame{
+
+border:2px solid rgba(216,177,91,.85);
+
+border-radius:18px;
+
+padding:40px 25px;
+
+background:rgba(0,0,0,.30);
+
+box-shadow:0 0 40px rgba(0,0,0,.55);
+
+animation:fadeIn 2s ease;
+
+}
+
+.logo{
+
+font-size:22px;
+
+letter-spacing:3px;
+
+color:#d8b15b;
+
+margin-bottom:18px;
+
+}
+
+h1{
+
+font-size:60px;
+
+margin-bottom:12px;
+
+color:#fff;
+
+text-shadow:0 0 18px rgba(255,255,255,.25);
+
+}
+
+.subtitle{
+
+font-size:24px;
+
+color:#d8b15b;
+
+margin-bottom:35px;
+
+}
+
+.author{
+
+font-size:22px;
+
+line-height:2;
+
+margin-top:10px;
+
+margin-bottom:35px;
+
+}
+
+.author span{
+
+display:block;
+
+font-size:18px;
+
+opacity:.85;
+
+color:#d8b15b;
+
+}
+
+.start-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:18px 55px;
+
+font-size:24px;
+
+font-weight:bold;
+
+color:#000;
+
+background:#d8b15b;
+
+border-radius:12px;
+
 text-decoration:none;
-color:white;
+
+transition:.35s;
+
+box-shadow:0 0 25px rgba(216,177,91,.45);
+
+}
+
+.start-btn:hover{
+
+transform:scale(1.05);
+
+background:#f0c96f;
+
+box-shadow:0 0 35px rgba(216,177,91,.8);
+
+}
+
+.note{
+
+margin-top:35px;
+
+font-size:15px;
+
+color:#d0d0d0;
+
+opacity:.8;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
 }
 
 </style>
@@ -122,392 +211,52 @@ color:white;
 
 <body>
 
-<header>
+<div class="container">
 
-<h1>الباب رقم ٧</h1>
+<div class="frame">
 
-<h2>Door Number 7</h2>
+<div class="logo">
+
+INTERACTIVE STORY
+
+</div>
+
+<h1>
+
+الباب رقم 7
+
+</h1>
+
+<div class="subtitle">
+
+كتاب تفاعلي
+
+</div>
 
 <div class="author">
 
-تأليف<br>
+<span>تأليف</span>
 
-<strong>عبدالمجيد حسن علي الوصابي</strong>
-
-<br><br>
-
-Written by
-
-<br>
-
-<strong>Abdulmajeed Hassan Ali Al-Wosabi</strong>
+عبدالمجيد بن حسن الوصابي
 
 </div>
 
-</header>
+<a class="start-btn" href="story.html">
 
-<div class="container">
-
-<div class="ar">
-
-<h2>بداية القصة</h2>
-
-<p>
-كانت الساعة تقترب من منتصف الليل عندما توقفت سيارة سامر أمام مبنى قديم مهجور على أطراف المدينة.
-</p>
-
-<p>
-لم يكن يؤمن بالخرافات، لكنه كان يؤمن بالفضول، والفضول وحده هو ما قاده إلى ذلك المكان.
-</p>
-
-<p>
-دخل المبنى وهو يسلط ضوء مصباحه بين الممرات الطويلة. كان كل شيء مغطى بالغبار، إلا آثار أقدام حديثة اتجهت نحو باب خشبي في نهاية الممر.
-</p>
-
-</div>
-
-<div class="en">
-
-<h2>Beginning</h2>
-
-<p>
-It was nearing midnight when Samer's car stopped in front of an abandoned building on the outskirts of the city.
-</p>
-
-<p>
-He never believed in superstitions, but he believed in curiosity, and curiosity alone had brought him there.
-</p>
-
-<p>
-He entered the building, sweeping his flashlight across the dusty corridors. Everything was covered with dust except for a trail of fresh footprints leading to a wooden door at the end of the hallway.
-</p>
-
-</div><div class="scene">
-
-<a href="scene1.html">
-
-<img src="Sc1.jpg" alt="المشهد الأول">
-
-<div class="play">
-
-🎬 شاهد المشهد الأول
-
-<small>
-
-اضغط على الصورة لتشغيل المشهد السينمائي
-
-</small>
-
-<hr>
-
-</div>
+ابدأ القصة
 
 </a>
 
-</div>
+<div class="note">
 
-<div class="ar">
-
-<p>
-اقترب سامر بخطوات بطيئة حتى لمس المقبض. كان باردًا على نحو غريب، وكأن أحدًا فتحه قبل لحظات.
-</p>
-
-<p>
-دفع الباب...
-</p>
-
-<p>
-فوجد غرفة خالية تمامًا، إلا من ساعة حائط قديمة متوقفة عند <strong>11:47</strong>، وصندوق خشبي صغير في المنتصف.
-</p>
-
-<p>
-تردد قليلًا، ثم رفع غطاء الصندوق.
-</p>
-
-<p>
-في داخله وجد مفتاحًا صدئًا ورسالة قصيرة كُتب عليها:
-</p>
-
-<blockquote>
-
-<strong>
-
-"إذا وجدت المفتاح... فلا تفتح الباب الثاني."
-
-</strong>
-
-</blockquote>
-
-<p>
-ابتسم ساخرًا وهو يطوي الورقة في جيبه.
-</p>
-
-<p>
-لكن عندما رفع رأسه، كان في الجدار المقابل باب لم يكن موجودًا قبل لحظات.
-</p>
-
-</div>
-
-<div class="en">
-
-<p>
-Samer slowly approached the handle. It felt strangely cold, as though someone had opened it only moments earlier.
-</p>
-
-<p>
-He pushed the door...
-</p>
-
-<p>
-Inside was a completely empty room except for an old wall clock frozen at <strong>11:47</strong> and a small wooden box in the center.
-</p>
-
-<p>
-After a brief hesitation, he lifted the lid.
-</p>
-
-<p>
-Inside was a rusty key and a handwritten note:
-</p>
-
-<blockquote>
-
-<strong>
-
-"If you found the key... do not open the second door."
-
-</strong>
-
-</blockquote>
-
-<p>
-He smiled sarcastically and slipped the note into his pocket.
-</p>
-
-<p>
-When he looked up, another door had appeared on the opposite wall.
-
-</p>
-
-</div><div class="scene">
-
-<a href="scene2.html">
-
-<img src="Sc2.jpg" alt="المشهد الثاني">
-
-<div class="play">
-
-🎬 شاهد المشهد الثاني
-
-<small>
-اضغط على الصورة لتشغيل المشهد السينمائي
-</small>
-
-<hr>
-
-</div>
-
-</a>
-
-</div>
-
-<div class="ar">
-
-<p>
-ظل يحدق في الباب الجديد عدة ثوانٍ، ثم تغلب الفضول مرة أخرى.
-</p>
-
-<p>
-أدخل المفتاح في القفل.
-</p>
-
-<p>
-استدار المفتاح بسهولة، وانفتح الباب دون أي صوت.
-</p>
-
-<p>
-خلفه لم تكن هناك غرفة...
-</p>
-
-<p>
-بل شارع مضاء بأشجار خضراء، وأطفال يركضون ويضحكون.
-</p>
-
-<p>
-نظر إلى أحد الأطفال، فتجمد الدم في عروقه.
-</p>
-
-<p>
-كان الطفل يشبهه تمامًا... لكنه في العاشرة من عمره.
-</p>
-
-</div>
-
-<div class="en">
-
-<p>
-He stared at the new door for several seconds before curiosity won once again.
-</p>
-
-<p>
-He inserted the rusty key into the lock.
-</p>
-
-<p>
-It turned effortlessly, and the door opened without making a sound.
-</p>
-
-<p>
-Beyond it was not another room...
-</p>
-
-<p>
-It was a bright street lined with green trees, where children were laughing and running.
-</p>
-
-<p>
-One child caught his attention.
-</p>
-
-<p>
-The boy looked exactly like him... except he was ten years old.
-</p>
-
-</div>
-
-<div class="scene">
-
-<a href="scene3.html">
-
-<img src="Sc3.jpg" alt="المشهد الثالث">
-
-<div class="play">
-
-🎬 شاهد المشهد الثالث
-
-<small>
-اضغط على الصورة لتشغيل المشهد السينمائي
-</small>
-
-</div>
-
-</a>
-
-</div>
-
-<div class="ar">
-
-<p>
-اقترب الطفل مبتسمًا وقال:
-</p>
-
-<p><strong>
-"تأخرت كثيرًا... كنا ننتظرك."
-</strong></p>
-
-<p>
-مد الطفل يده وقال بهدوء:
-</p>
-
-<p><strong>
-"إذا دخلت... فلن تعود إلى عالمك مرة أخرى."
-</strong></p>
-
-<p>
-نظر سامر خلفه، فلم يعد يرى الغرفة القديمة.
-</p>
-
-<p>
-لم يبقَ إلا الطريق المضيء أمامه.
-</p>
-
-<p>
-ابتسم ابتسامة خفيفة، وأغلق الباب ببطء.
-</p>
-
-<p>
-وفي صباح اليوم التالي، عثر رجال الشرطة على المبنى المهجور كما كان دائمًا...
-</p>
-
-<p>
-خاليًا تمامًا.
-</p>
-
-<p>
-إلا من صندوق خشبي قديم، وورقة صفراء كُتب عليها:
-</p>
-
-<p><strong>
-"إذا وجدت المفتاح... فلا تفتح الباب الثاني."
-</strong></p>
-
-</div>
-
-<div class="en">
-
-<p>
-The boy smiled and said,
-</p>
-
-<p><strong>
-"You are late... We've been waiting for you."
-</strong></p>
-
-<p>
-He gently extended his hand.
-</p>
-
-<p><strong>
-"If you step through... you will never return to your world."
-</strong></p>
-
-<p>
-Samer looked back.
-</p>
-
-<p>
-The abandoned room had vanished.
-</p>
-
-<p>
-Only the bright road remained before him.
-</p>
-
-<p>
-He smiled softly...
-</p>
-
-<p>
-...and slowly closed the door.
-</p>
-
-<p>
-The next morning, police found the abandoned building exactly as it had always been.
-</p>
-
-<p>
-Empty.
-</p>
-
-<p>
-Except for an old wooden box and a yellowed note that read:
-</p>
-
-<p><strong>
-"If you found the key... do not open the second door."
-</strong></p>
+الإصدار 1.0
 
 </div>
 
 </div>
 
-<footer>
-
-Door Number 7 © 2026<br>
-
-Interactive Story by Abdulmajeed Hassan Ali Al-Wosabi
-
-</footer>
+</div>
 
 </body>
+
 </html>
