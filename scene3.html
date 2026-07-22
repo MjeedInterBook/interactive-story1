@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,43 @@
 <style>
 
 body{
-margin:0;
-background:#000;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-font-family:Tahoma,Arial,sans-serif;
-overflow:hidden;
+    margin:0;
+    background:#000;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+h1{
+    margin:20px;
+    text-align:center;
 }
 
 video{
-width:100%;
-height:100%;
-object-fit:contain;
-background:#000;
+    width:95%;
+    max-width:700px;
+    border-radius:12px;
+    background:#000;
 }
 
 #back{
-display:none;
-position:absolute;
-bottom:30px;
-left:50%;
-transform:translateX(-50%);
-padding:14px 30px;
-background:#d8b15b;
-color:#000;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-border-radius:10px;
+    display:none;
+    margin-top:20px;
+    padding:14px 30px;
+    background:#d8b15b;
+    color:#000;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:10px;
+}
+
+#back:hover{
+    background:#f2c96d;
 }
 
 </style>
@@ -47,25 +55,24 @@ border-radius:10px;
 
 <body>
 
+<h1>📖 المشهد الثالث</h1>
+
 <video id="video" controls autoplay>
-
-<source src="Scene3.mp4" type="video/mp4">
-
-متصفحك لا يدعم تشغيل الفيديو.
-
+    <source src="Scene3.mp4" type="video/mp4">
+    متصفحك لا يدعم تشغيل الفيديو.
 </video>
 
 <a id="back" href="index.html">
-📖 العودة إلى القصة
+🏁 إنهاء القصة والعودة للكتاب
 </a>
 
 <script>
 
-const video=document.getElementById("video");
-const back=document.getElementById("back");
+const video = document.getElementById("video");
+const back = document.getElementById("back");
 
-video.onended=function(){
-back.style.display="block";
+video.onended = function () {
+    back.style.display = "inline-block";
 };
 
 </script>
