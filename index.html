@@ -1,69 +1,174 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>المشهد الأول</title>
+
+<title>الباب رقم ٧ | Door Number 7</title>
 
 <style>
+
 body{
-    margin:0;
-    background:#000;
-    color:#fff;
-    font-family:Arial,sans-serif;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
+margin:0;
+background:#111;
+color:white;
+font-family:Tahoma,Arial,sans-serif;
+line-height:2;
 }
 
-h1{
-    margin:20px;
+header{
+background:#000;
+padding:60px 20px;
+text-align:center;
 }
 
-video{
-    width:95%;
-    max-width:700px;
-    border-radius:12px;
+header h1{
+font-size:48px;
+margin:0;
 }
 
-#backBtn{
-    display:none;
-    margin-top:20px;
-    padding:14px 28px;
-    font-size:20px;
-    background:#ffffff;
-    color:#000;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
+header h2{
+margin-top:10px;
+color:#d8b15b;
+font-weight:normal;
 }
+
+.author{
+margin-top:30px;
+font-size:22px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:30px;
+}
+
+.ar{
+font-size:24px;
+margin-bottom:40px;
+}
+
+.en{
+font-size:20px;
+color:#d9d9d9;
+border-right:4px solid #666;
+padding-right:20px;
+margin-bottom:60px;
+direction:ltr;
+text-align:left;
+}
+
+.scene{
+margin:50px 0;
+text-align:center;
+}
+
+.scene img{
+width:100%;
+max-width:700px;
+border-radius:15px;
+box-shadow:0 0 30px rgba(0,0,0,.5);
+cursor:pointer;
+transition:.3s;
+}
+
+.scene img:hover{
+transform:scale(1.02);
+}
+
+.play{
+margin-top:15px;
+font-size:22px;
+color:#ffd76b;
+}
+
+footer{
+padding:60px;
+text-align:center;
+color:#888;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>📖 المشهد الأول</h1>
+<header>
 
-<video id="video" controls autoplay>
-    <source src="Scene1.mp4" type="video/mp4">
-    متصفحك لا يدعم تشغيل الفيديو.
-</video>
+<h1>الباب رقم ٧</h1>
 
-<button id="backBtn" onclick="history.back()">
-⬅ العودة إلى القصة
-</button>
+<h2>Door Number 7</h2>
 
-<script>
-const video=document.getElementById("video");
-const btn=document.getElementById("backBtn");
+<div class="author">
 
-video.onended=function(){
-    btn.style.display="block";
-};
-</script>
+تأليف<br>
+
+عبدالمجيد حسن علي الوصابي<br><br>
+
+Written by<br>
+
+Abdulmajeed Hassan Ali Al-Wosabi
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="ar">
+
+كانت الساعة تقترب من منتصف الليل عندما توقفت سيارة سامر أمام مبنى قديم مهجور على أطراف المدينة.
+
+لم يكن يؤمن بالخرافات...
+
+لكنه كان يؤمن بالفضول.
+
+والفضول وحده هو ما قاده إلى ذلك المكان.
+
+</div>
+
+<div class="en">
+
+It was nearing midnight when Samer's car stopped in front of an abandoned building on the outskirts of the city.
+
+He never believed in myths...
+
+But he always believed in curiosity.
+
+And curiosity alone brought him here.
+
+</div>
+
+<div class="scene">
+
+<a href="scene1.html">
+
+<img src="Sc1.jpg">
+
+<div class="play">
+
+▶ اضغط على الصورة لمشاهدة المشهد الأول
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+Door Number 7 © 2026
+
+</footer>
 
 </body>
 </html>
