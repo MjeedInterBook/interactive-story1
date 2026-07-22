@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>المشهد الأول</title>
 
 <style>
+
 body{
     margin:0;
     background:#000;
@@ -20,12 +23,14 @@ body{
 
 h1{
     margin:20px;
+    text-align:center;
 }
 
 video{
     width:95%;
     max-width:700px;
     border-radius:12px;
+    background:#000;
 }
 
 #backBtn{
@@ -33,12 +38,18 @@ video{
     margin-top:20px;
     padding:14px 28px;
     font-size:20px;
-    background:#ffffff;
+    font-weight:bold;
+    background:#d8b15b;
     color:#000;
     border:none;
     border-radius:10px;
     cursor:pointer;
 }
+
+#backBtn:hover{
+    background:#f2c96d;
+}
+
 </style>
 
 </head>
@@ -52,17 +63,19 @@ video{
     متصفحك لا يدعم تشغيل الفيديو.
 </video>
 
-<button id="backBtn" onclick="history.back()">
+<button id="backBtn" onclick="window.location.href='scene2.html'">
 ▶ التالي: المشهد الثاني
 </button>
 
 <script>
+
 const video = document.getElementById("video");
 const btn = document.getElementById("backBtn");
 
 video.onended = function () {
     btn.style.display = "block";
 };
+
 </script>
 
 </body>
